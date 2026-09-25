@@ -1,1 +1,26 @@
-wow cool!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<pre class="blocks">
+	configure [to world space from model space v] transformation :: sensing
+	start with no transformation :: sensing
+	move X:(posX) Y:(posY) Z:(posZ) :: sensing
+	rotate around [Y v] by (yaw) :: sensing
+	rotate around [X v] by (pitch) :: sensing
+	rotate around [Z v] by (roll) :: sensing
+	scale X:(sizeX) Y:(sizeY) Z:(sizeZ) :: sensing
+	</pre>
+	<script type="module">
+	import scratchblocks from "sss.js";
+	scratchblocks.renderMatching('pre.blocks', {
+		style: 'scratch3', // Optional, defaults to 'scratch2'.
+		scale: 0.8, // Optional, defaults to 1
+	});
+</script>
+</body>
+</html>
